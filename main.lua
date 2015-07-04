@@ -8,7 +8,6 @@ Vector = require 'hump/vector-light'
 Timer = require 'hump/timer'
 ResourceManager = require 'ResourceManager'
 
-
 local time = {}
 time.fdt = 1/60 --fixed delta time
 time.accum = 0
