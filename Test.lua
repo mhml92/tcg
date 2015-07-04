@@ -8,7 +8,7 @@ local Test = Class("Test")
 function Test:initialize()
 	s0 = Source:new(true)
 	s1 = Source:new(false)
-	s2 = Source:new(true)
+	s2 = Source:new(false)
 
 
 	or0 = Or:new()
@@ -19,6 +19,7 @@ function Test:initialize()
 	edge2 = Edge:new(s2, and0)
 	edge3 = Edge:new(or0, and0)
 
+	print(and0)
 	if and0:getValue() then
 		print("true")
 	else

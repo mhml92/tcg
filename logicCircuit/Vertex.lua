@@ -26,7 +26,7 @@ end
 function Vertex:getValue()
 	local args = {}
 	for k,v in pairs(self.incoming) do
-		local arg = v:getValue()
+		local arg = v:getSource():getValue()
 		table.insert(args, arg)
 	end
 	return self:value(args)

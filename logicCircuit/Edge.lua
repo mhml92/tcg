@@ -1,5 +1,3 @@
-local Class = require "../middleclass/middleclass"
-
 local Edge = Class("Edge")
 
 Edge.static.id = 0
@@ -23,8 +21,8 @@ function Edge:getSource()
 	return self.from
 end
 
-function Edge:getSource()
-	return self.from
+function Edge:getTarget()
+	return self.to
 end
 
 function Edge:setWeight(w)
