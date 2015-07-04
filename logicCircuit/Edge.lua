@@ -1,7 +1,5 @@
 local Class = require "../middleclass/middleclass"
 
-
-
 local Edge = Class("Edge")
 
 Edge.static.id = 0
@@ -21,13 +19,20 @@ function Edge:delete()
 	self.to:removeIn(self)
 end
 
+function Edge:getSource()
+	return self.from
+end
+
+function Edge:getSource()
+	return self.from
+end
 
 function Edge:setWeight(w)
 	self.weight = w
 end
 
 function Edge:getID()
-	return self.id
+	return self.ID
 end
 
 
