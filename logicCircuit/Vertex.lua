@@ -5,7 +5,7 @@ function Vertex:initialize()
 	self.outgoing = {}
 end
 
-function Vertex:addIn(edge, index)
+function Vertex:addIn(edge)
 	self.incoming[edge:getID()] = edge
 	return true
 end

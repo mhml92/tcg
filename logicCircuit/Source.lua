@@ -1,4 +1,4 @@
-local Source = Class("Source","Vertex")
+local Source = Class("Source", Vertex)
 
 function Source:initialize(value)
 	Vertex.initialize(self)
@@ -15,4 +15,3 @@ function Source:toggle()
 end
 
 return Source
-

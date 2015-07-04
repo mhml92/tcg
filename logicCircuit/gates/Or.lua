@@ -1,4 +1,4 @@
-local Or = Class("And","Vertex")
+local Or = Class("And", Vertex)
 
 function Or:initialize()
 	Vertex.initialize(self)
@@ -10,7 +10,7 @@ function Or:value(input)
 			return true
 		end
 	end
-	retun false
+	return false
 end
 
 	

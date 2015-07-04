@@ -1,4 +1,4 @@
-local And = Class("And","Vertex")
+local And = Class("And", Vertex)
 
 function And:initialize()
 	Vertex.initialize(self)
@@ -10,10 +10,8 @@ function And:value(input)
 			return false
 		end
 	end
-	retun true
+	return true
 end
 
 	
 return And
-
-

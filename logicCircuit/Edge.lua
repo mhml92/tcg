@@ -6,7 +6,7 @@ local Edge = Class("Edge")
 
 Edge.static.id = 0
 
-function Edge:initialize(from,to weight)
+function Edge:initialize(from, to, weight)
 	self.from = from
 	self.to = to
 	self.weight = weight or 0

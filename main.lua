@@ -9,6 +9,7 @@ local time = {}
 time.fdt = 1/60 --fixed delta time
 time.accum = 0
 
+Vertex = require 'logicCircuit/Vertex'
 Test = require 'Test'
 
 
