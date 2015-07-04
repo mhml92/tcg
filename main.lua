@@ -2,15 +2,14 @@ math.random = love.math.random
 
 DEBUG = true
 Class = require 'middleclass/middleclass'
-Scene = require 'Scene'
-Entity = require 'Entity'
 Vector = require 'hump/vector-light'
 Timer = require 'hump/timer'
-ResourceManager = require 'ResourceManager'
 
 local time = {}
 time.fdt = 1/60 --fixed delta time
 time.accum = 0
+
+Test = require 'Test'
 
 
 local self = {}
@@ -20,10 +19,10 @@ function love.load()
    --love.mouse.setVisible(false)
    local w,h = love.graphics.getDimensions()
    love.graphics.setScissor( 0, 0, w, h)
-	resmgr = ResourceManager:new()
-	self.scene = TestScene:new(self.resmgr)
 	love.graphics.setBackgroundColor(255/5,255/5,255/2)
 --	self.scene = MenuScene:new()
+	local test = Test:new()
+	test:run()
 end
 
 function love.update(dt)
@@ -36,7 +35,6 @@ function love.update(dt)
 end
 
 function love.draw()
-	self.scene:draw()
 	love.graphics.print("Current FPS: "..tostring(love.timer.getFPS( )), 10, 10) 
 end 
 
