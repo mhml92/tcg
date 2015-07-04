@@ -1,4 +1,4 @@
-local Or = Class("And", Vertex)
+local Or = Class("Or", Vertex)
 
 function Or:initialize()
 	Vertex.initialize(self)
