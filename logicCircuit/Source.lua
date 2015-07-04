@@ -1,17 +1,17 @@
 local Source = Class("Source", Vertex)
 
-function Source:initialize(value)
+function Source:initialize(val)
 	Vertex.initialize(self)
 
-	self.value = value
+	self.val = val
 end
 
 function Source:value()
-	return self.value
+	return self.val
 end
 
 function Source:toggle()
-	self.value = not self.value
+	self.val = not self.val
 end
 
 return Source

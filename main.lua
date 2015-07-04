@@ -29,7 +29,6 @@ function love.update(dt)
 	Timer.update(dt)
 	time.accum = time.accum + dt 
 	while time.accum >= time.fdt do
-		self.scene:update(time.fdt)
 		time.accum = time.accum - time.fdt
 	end
 end
