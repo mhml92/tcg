@@ -23,7 +23,6 @@ function love.load()
 	love.graphics.setBackgroundColor(255/5,255/5,255/2)
 --	self.scene = MenuScene:new()
 	local test = Test:new()
-	test:run()
 end
 
 function love.update(dt)
