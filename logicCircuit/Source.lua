@@ -1,7 +1,7 @@
 local Source = Class("Source", Vertex)
 
 function Source:initialize(val)
-	Vertex.initialize(self)
+	vertex.initialize(self)
 
 	self.val = val
 end

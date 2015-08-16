@@ -1,20 +1,18 @@
 math.random = love.math.random
 
-DEBUG = true
-Class = require 'middleclass/middleclass'
-Vector = require 'hump/vector-light'
-Timer = require 'hump/timer'
+DEBUG    = true
+Class    = require 'middleclass/middleclass'
+Scene    = require 'Scene'
+Vector   = require 'hump/vector-light'
+Timer    = require 'hump/timer'
 
 local time = {}
 time.fdt = 1/60 --fixed delta time
 time.accum = 0
 
-Vertex = require 'logicCircuit/Vertex'
-Test = require 'Test'
-
+BasicScene = require 'scenes/Basic'
 
 local self = {}
-
 
 function love.load()
    --love.mouse.setVisible(false)
@@ -22,7 +20,7 @@ function love.load()
    love.graphics.setScissor( 0, 0, w, h)
 	love.graphics.setBackgroundColor(255/5,255/5,255/2)
 --	self.scene = MenuScene:new()
-	local test = Test:new()
+	local basicScene = BasicScene:new()
 end
 
 function love.update(dt)
